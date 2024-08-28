@@ -120,3 +120,71 @@
                 <option value="dissatisfied">Dissatisfied</option>
                 <option value="very-dissatisfied">Very Dissatisfied</option>
             </select>
+ </div>
+
+        <!-- Multiple-Choice Questions -->
+        <div class="question-group">
+            <label>Which aspects of the Arcade program did you find most useful? (Select all that apply)</label>
+            <label class="inline"><input type="checkbox" name="useful-aspects" value="content-quality"> Content Quality</label>
+            <label class="inline"><input type="checkbox" name="useful-aspects" value="interactivity"> Interactivity</label>
+            <label class="inline"><input type="checkbox" name="useful-aspects" value="ease-of-use"> Ease of Use</label>
+            <label class="inline"><input type="checkbox" name="useful-aspects" value="support"> Support</label>
+            <label class="inline"><input type="checkbox" name="useful-aspects" value="other"> Other</label>
+        </div>
+
+        <div class="question-group">
+            <label>How likely are you to recommend the Arcade program to others?</label>
+            <label class="inline"><input type="radio" name="recommendation" value="definitely"> Definitely</label>
+            <label class="inline"><input type="radio" name="recommendation" value="probably"> Probably</label>
+            <label class="inline"><input type="radio" name="recommendation" value="not-sure"> Not Sure</label>
+            <label class="inline"><input type="radio" name="recommendation" value="probably-not"> Probably Not</label>
+            <label class="inline"><input type="radio" name="recommendation" value="definitely-not"> Definitely Not</label>
+        </div>
+
+        <!-- Additional Questions -->
+        <div class="question-group">
+            <label for="favorite-feature">What is your favorite feature of the Arcade program?</label>
+            <input type="text" id="favorite-feature" name="favorite-feature" placeholder="Enter your favorite feature">
+        </div>
+
+        <div class="question-group">
+            <label for="improvement-suggestions">What improvements would you like to see in future updates?</label>
+            <textarea id="improvement-suggestions" name="improvement-suggestions" rows="4" placeholder="Your suggestions"></textarea>
+        </div>
+
+        <div class="question-group">
+            <label for="program-frequency">How often do you use the Arcade program?</label>
+            <select id="program-frequency" name="program-frequency">
+                <option value="" disabled selected>Select your option</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="rarely">Rarely</option>
+            </select>
+        </div>
+
+        <div class="question-group">
+            <label>Did you encounter any issues while using the Arcade program?</label>
+            <label class="inline"><input type="radio" name="issues" value="yes"> Yes</label>
+            <label class="inline"><input type="radio" name="issues" value="no"> No</label>
+        </div>
+
+        <div class="question-group">
+            <label for="issue-details">If yes, please describe the issues:</label>
+            <textarea id="issue-details" name="issue-details" rows="4" placeholder="Describe any issues"></textarea>
+        </div>
+
+        <!-- Additional Comments -->
+        <div class="question-group">
+            <label for="comments">Any additional comments or suggestions?</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Your feedback"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="question-group">
+            <input type="submit" value="Submit Feedback">
+        </div>
+    </form>
+
+</body>
+</html>
