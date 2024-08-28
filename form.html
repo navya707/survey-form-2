@@ -59,3 +59,64 @@
             background-color: #f1f1f1;
             color: #333;
         }
+
+                input[type="submit"] {
+            background-color: #ff5722;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #e64a19;
+            transform: scale(1.05);
+        }
+        .question-group {
+            margin-bottom: 20px;
+        }
+        .question-group input[type="checkbox"],
+        .question-group input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .question-group label.inline {
+            display: inline-block;
+            margin-right: 15px;
+            color: #ff5722;
+        }
+        .question-group textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/submit-survey" method="post">
+        <h1>Arcade Program Feedback Survey</h1>
+        <p>Please provide your feedback about the Arcade program. Your input is valuable to us!</p>
+
+        <!-- Personal Information -->
+        <div class="question-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+
+        <div class="question-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </div>
+
+        <!-- Program Satisfaction -->
+        <div class="question-group">
+            <label for="overall-satisfaction">Overall, how satisfied are you with the Arcade program?</label>
+            <select id="overall-satisfaction" name="overall-satisfaction">
+                <option value="" disabled selected>Select your option</option>
+                <option value="very-satisfied">Very Satisfied</option>
+                <option value="satisfied">Satisfied</option>
+                <option value="neutral">Neutral</option>
+                <option value="dissatisfied">Dissatisfied</option>
+                <option value="very-dissatisfied">Very Dissatisfied</option>
+            </select>
